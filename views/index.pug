@@ -1,0 +1,58 @@
+
+block content
+  include ./name1.pug  
+  // ********************  PROJECTS / PORTFOLIO  *********************
+block content
+  include ./projects1.pug  
+
+   // ***********************  WORK EXPERIENCE  ***********************
+  // ******************  EDUCATION & CERTIFICATIONS ******************
+block content   
+  include ./education1.pug
+
+    // End of School block.
+  // *****************  CONTACT INFO / SOCIAL MEDIA  *****************
+
+
+
+block content
+
+  footer
+     
+      h2 Let&apos;s Keep in Touch!
+  each item in documents
+      h3=item.email    
+      // Social media and contact links. Add or remove any networks.
+      ul.contact-list
+ 
+      
+
+
+
+  block content   
+  include ./editbutton.pug
+
+         
+  include ./name.pug 
+  include ./description.pug
+  include ./aspiration.pug
+  include ./technologies
+  include ./create.pug
+  include ./projects.pug     
+  include ./contacts.pug
+         
+
+
+  //- each item in documents
+  //-   div.resume-container
+  //-     h1=item.description
+  //-     h1=item.aspiration
+  //-     h1=item.technologies
+  //-     h1=item.projects
+  //-     h1=item.education
+  //-     h2=item.additional
+  //-     a(href="/resumes/"+item._id) details
+  //-     br
+  //-     a(href="/edit/" + item._id) Edit 
+  //-     br
+  //-     a(href="/delete/" + item._id) Delete 

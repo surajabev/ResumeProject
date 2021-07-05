@@ -1,0 +1,18 @@
+extends ./layout.pug
+block content
+    div.create-container
+        form(action="/edit",  method="post")
+            input(type="hidden" name= "_id" value= resume._id)
+            input(type="text", placeholder=" Edit Name", name="named" value= resume.name)
+            input(type="text", placeholder=" Edit Description", name="descripdion" value= resume.description)
+            input(type="text", placeholder=" Edit Aspiration", name="aspiradion" value= resume.aspiration)
+            input(type="text", placeholder=" Edit Technologies", name="technolojies" value= resume.technologies)
+            input(type="text", placeholder=" Edit Education", name="educasion" value= resume.education)
+            input(type="text", placeholder=" Edit Projects", name="projecd" value= resume.projects)
+            input(type="text", placeholder="Edit email", name="gmail" value= resume.email)
+            input(type="text", placeholder="Edit additional", name="addisional" value= resume.additional)
+            button Edit  
+    a(href= "/") Home
+           
+           
+

@@ -1,0 +1,334 @@
+/*
+https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
+--mint-cream: #f7fff7ff;
+--jet: #343434ff;
+--space-cadet: #2f3061ff;
+--naples-yellow: #ffe66dff;
+--pale-cerulean: #a1c6d7ff;
+*/
+
+
+/*Global Styles
+-------------------------------*/
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+} 
+
+
+
+body{
+    color: #343434;
+    margin:0;
+    padding:0;
+    font-family:'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height:1.5;
+    }
+    img {
+      width: 300px;
+    }
+
+     a{
+
+      color:#ffe66dff;
+     }
+     a:hover{
+        text-decoration:none;
+
+     }
+
+     h1{
+
+
+      font-size: 100px;
+      line-height:0.8;
+      text-align:center;
+     
+     }
+
+     h2{
+       
+      font-size: 45px;
+      text-align:center;
+      
+ 
+     }
+
+     h1,h2{
+
+      font-family: 'Caveat',cursive;
+      font-weight: 400;
+      margin:0;
+      text-align:center;
+   
+     }
+    .content-wrap{
+
+
+      max-width: 800px;
+      width:85%;
+      text-align:center;
+      align-content:center;
+  
+     }
+
+     h3{
+
+      margin-bottom:0;
+      text-align:center;
+      align-content:center;
+     }
+     .item
+
+
+    .item-details h3+p{
+
+
+       font-style:italic;
+
+     }
+
+      h6{
+       font-size:35px;
+       text-align:center;
+       align-content:center;
+     }
+     .item-details h3~p{
+
+     margin:0;
+
+     }
+    
+        
+            
+         
+
+     .divider>section{
+
+      border-bottom:1px dashed #343434;
+      padding:25px 0;
+      text-align:center;
+      align-content:center;
+
+     }
+
+
+     .divider>section:last-of-type{
+
+      border-bottom:none;
+      text-align:center;
+
+
+     }
+    /*Profile
+    
+    -------------------------------*/
+    header{
+
+      background: #2f3061ff;
+      color:#F7FFF7;
+ 
+    }
+    /*Projects
+    
+    -------------------------------*/
+    .projects{
+
+      background:#F7FFF7;
+    }
+    .projects a{
+      
+      color: #2f3061ff;
+    
+    }
+
+
+      
+    .projects .btn{
+
+      color:#F7FFF7; 
+      background: #2f3061;
+      text-decoration:none;
+      padding:8px;
+      border-radius: 4px;
+
+      display:inline-block;
+    }
+
+    .projects .btn:hover{
+
+      background:rgba(47,48,97,80%);
+    }
+    .project-item{
+
+
+      overflow:hidden;
+ 
+
+      }
+
+    
+    .project-item h3{
+
+    margin-top: 0;
+
+    }
+    /*Work Experience
+    
+    -------------------------------*/
+    .work-experience{
+
+      background: #A1C6D7;
+    }
+    
+ 
+    
+  
+    
+    /*Education
+    
+    -------------------------------*/
+    .education{
+    background-image:url(../img/joanna-kosinska-unsplash.jpg);
+    background-size:cover;
+    background-position:top right;
+    padding-bottom:100px;
+    }
+
+    .education p{
+
+
+      width:60%;
+    }
+    /*Contact Info
+    
+    -------------------------------*/
+    
+    footer{
+
+      background:#343434;
+      color:#F7FFF7;
+
+    }
+
+    .contact-list{
+
+      list-style-type:none;
+      padding:0;
+    
+    }
+    .contact-list a{
+
+      padding:15px;
+      display:inline-block;
+    }
+
+    /*Responsive*/
+
+
+    @media screen and (min-width:750px){
+      
+     header , footer{ 
+       text-align:center;
+      }
+
+      .project-item img{
+
+        float:left;
+        margin-right:20px;
+     
+      }
+          
+    .job-item{
+
+      display:grid;
+      grid-template-columns:1 fr 2fr;
+  
+      column-gap:20px;
+      }
+      .contact-list{
+
+        display:flex;
+        justify-content:center;
+      }
+
+    }
+
+    @media screen and (max-width:749px)
+
+    {
+
+      h1{
+
+
+        font-size: 75px;
+        line-height:0.9;
+        margin-bottom:20px;;
+       }
+       h2{
+       
+        line-height: 1;
+       }
+     .contact-list a{
+
+
+      padding:5px;
+     }
+    }
+    body {
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+    }
+    .superhero-container {
+      display: inline-block;
+      width: 200px;
+      text-align: center;
+      margin-right: 10px;
+      margin-bottom: 40px;
+    }  
+    .create-container {
+      padding: 10px;
+    }
+    .create-container input[type="text"] {
+      font-size: 16px;
+      padding: 5px;
+    }
+    .create-container button {
+      font-size: 16px;
+      padding: 5px;
+      margin-left: 10px;
+    }
+
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+body {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+  }
+  .resume-container {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 40px;
+  }  
+  .create-container {
+    padding: 10px;
+  }
+  .create-container input[type="text"] {
+    font-size: 16px;
+    padding: 5px;
+  }
+  .create-container button {
+    font-size: 16px;
+    padding: 5px;
+    margin-left: 10px;
+  }
+

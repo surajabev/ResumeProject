@@ -1,0 +1,6 @@
+extends ./edit.pug
+block content
+  each item in documents
+    div.create-container
+    a(href="/edit/" + item._id) Edit  
+    a(href="/delete/" + item._id) Delete  
