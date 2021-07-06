@@ -8,6 +8,7 @@ if (process.env.NODE_ENV !== 'production') {
   const bcrypt = require('bcrypt')
   const passport = require('passport')
   const flash = require('express-flash')
+  var cookieParser = require('cookie-parser')
   app.use(cookieParser());
   const session = require('express-session')
   const methodOverride = require('method-override')
