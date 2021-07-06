@@ -92,16 +92,13 @@ if (process.env.NODE_ENV !== 'production') {
       res.redirect('/register')
     }
   })
-  const resumes=[
+  // const resumes=[
      
-    {id:1.0,description:'Fresher Software Developer'},
-    {id:1.1,aspiration:'As a developer trainee, I am specialized in creating frontend and backend application merged to be a Full-Stack application'},
-    {id:1.2,technologies:'Node.js,MongoDB,'}
-  ]
+  //   {id:1.0,description:'Fresher Software Developer'},
+  //   {id:1.1,aspiration:'As a developer trainee, I am specialized in creating frontend and backend application merged to be a Full-Stack application'},
+  //   {id:1.2,technologies:'Node.js,MongoDB,'}
+  // ]
    
-    
-
-
   //below step links to line 11 of index.pug ie details it
   //fetches backend information for details 
   app.get('/resumes/:id', function(req,res){
