@@ -1,11 +1,10 @@
-
-
 if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config()
   }
-  
+  var dotenv=require('dotenv');
   const express = require('express')
   const app = express()
+  dotenv.config();
   const bcrypt = require('bcrypt')
   const passport = require('passport')
   const flash = require('express-flash')
@@ -14,9 +13,16 @@ if (process.env.NODE_ENV !== 'production') {
   const mongoClient=require('mongodb').MongoClient;
   const ObjectID = require('mongodb').ObjectID;
   app.use(express.static('public'));
-  const port=3002;
+
+ 
+  //const port=3002;
   //connection string 
-  const dburl="mongodb://localhost:27017"
+  //const dburl="mongodb://localhost:27017"
+  //const dburl='mongodb+srv://testuser:testuser@cluster0.ie8km.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+  
+ 
+  const dburl=process.env.MONGODB_URI;
+  console.log(dburl);
   //with body parser we create a middleware defined down
   const bodyParser=require('body-parser');
   //each req this is executed before route
@@ -331,40 +337,16 @@ if (process.env.NODE_ENV !== 'production') {
         }
         next()
       }
-      app.listen(port, () => {
-        console.log(`Server running on port ${port}`);
+      // app.listen(port, () => {
+      //   console.log(`Server running on port ${port}`);
+      // });
+
+      const host = '0.0.0.0';
+      const port = process.env.PORT || 3000;
+
+      app.listen(port, host, function() {
+        console.log("Server started.......");
       });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // if (process.env.NODE_ENV !== 'production') {
