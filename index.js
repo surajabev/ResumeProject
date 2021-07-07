@@ -47,7 +47,8 @@ if (process.env.NODE_ENV !== 'production') {
   app.use(express.urlencoded({ extended: false }))
   app.use(flash())
   app.use(session({
-    secret: process.env.secret,
+    //secret: process.env.secret,
+    secret: 'Suraj loves you all',    
     resave: false,
     saveUninitialized: false
   }))
